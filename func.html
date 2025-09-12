@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing JS functions</title>
+</head>
+
+<body>
+    <h1>Simple buttons</h1>
+
+    <div>
+        <h2>Counter</h2>
+        <p>Current count:<span id="counter">0</span></p>
+        <button onclick="inc()">inc</button>
+        <button onclick="dec()">dec</button>
+    </div>
+
+    <script>
+        let count=0;
+
+        function inc()
+        {
+            count++;
+            document.getElementById('counter').textCountent=count;
+        }
+
+        function dec()
+        {
+            count--;
+            document.getElementById('counter').textContent=count;
+        }
+    </script>
+</body>
+</html>
